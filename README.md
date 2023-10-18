@@ -12,6 +12,8 @@
   <div align="center"></div>
 </p>
 
+# Evaluation
+We provide our method's meshes for evaluation purposes: <a href="" target="_blank" rel="noopener">meshes.zip</a>
 
 # Citation
 If you find our code or paper useful, please cite
