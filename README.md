@@ -8,7 +8,7 @@
 
   </p>
   <h2 align="center">NeurIPS 2023</h2>
-  <h3 align="center"><a href="">Paper</a> | <a href="https://machineperceptionlab.github.io/Attentive_DF_Prior/">Project Page</a> </h3>
+  <h3 align="center"><a href="http://arxiv.org/abs/2310.11598">Paper</a> | <a href="https://machineperceptionlab.github.io/Attentive_DF_Prior/">Project Page</a> </h3>
   <div align="center"></div>
 </p>
 
