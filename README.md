@@ -19,7 +19,7 @@
 # Run
 
 # Evaluation
-We provide our reconstructed meshes for evaluation purposes:: <a href="https://drive.google.com/file/d/1MUGPRbzL9yfWQ14QwLb91Gigsh0CegVX/view?usp=share_link" target="_blank" rel="noopener">meshes.zip</a>.
+We provide our reconstructed meshes for evaluation purposes: <a href="https://drive.google.com/file/d/1MUGPRbzL9yfWQ14QwLb91Gigsh0CegVX/view?usp=share_link" target="_blank" rel="noopener">meshes.zip</a>.
 
 # Citation
 If you find our code or paper useful, please cite
