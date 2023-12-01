@@ -1,0 +1,9 @@
+inherit_from: configs/ScanNet/scannet.yaml
+mapping:
+  bound: [[-0.5,6.0],[-0.5,5.0],[-0.5,3.0]]
+  marching_cubes_bound: [[-0.5,6.0],[-0.5,5.0],[-0.5,3.0]]
+data:
+  dataset: scannet
+  input_folder: Datasets/scannet/scans/scene0616_00
+  output: output/scannet/scans/scene0616_00
+  id: 616
