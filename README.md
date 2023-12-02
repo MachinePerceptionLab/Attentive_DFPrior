@@ -113,7 +113,7 @@ You can run DF-Prior by using the following code:
 
 ```bash
 CUDA_VISIVLE_DEVICES=0 python -W ignore run.py configs/Replica/room0.yaml # For Replica
-CUDA_VISIVLE_DEVICES=0 python -W ignore run.py configs/ScanNet/scene0050_00.yaml # For ScanNet
+CUDA_VISIVLE_DEVICES=0 python -W ignore run.py configs/ScanNet/scene0050.yaml # For ScanNet
 ```
 
 The mesh for evaluation is saved as `$OUTPUT_FOLDER/mesh/final_mesh_eval_rec.ply`, where the unseen regions are culled using all frames.
