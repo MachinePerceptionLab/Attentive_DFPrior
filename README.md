@@ -39,9 +39,9 @@
 
 
 ## Installation
-Please install all dependencies by following the instrutions here. You can use [anaconda](https://www.anaconda.com/) to finish the installation easily.
+Please install all dependencies by following the instructions here. You can use [anaconda](https://www.anaconda.com/) to finish the installation easily.
 
-You can bulid a conda environment called `df-prior`. Note that for linux users, you need to install `libopenexr-dev` first before building the environment.
+You can build a conda environment called `df-prior`. Note that for Linux users, you need to install `libopenexr-dev` first before building the environment.
 
 ```bash
 git clone https://github.com/MachinePerceptionLab/Attentive_DFPrior.git
@@ -102,7 +102,7 @@ Please follow the data downloading procedure on [ScanNet](http://www.scan-net.or
 
 To run our code, you first need to generate the TSDF volume and corresponding bounds. We provide the generated TSDF volume and bounds for Replica and ScanNet: <a href="https://drive.google.com/file/d/1RcPuyW6VZJySK8bOscvkCMDEJIa1aMaA/view?usp=sharing" target="_blank" rel="noopener">replica_tsdf_volume.tar</a>, <a href="https://drive.google.com/file/d/1EqZ-Q1kEPhZKHOGc8Y1eKxAz-va_0icN/view?usp=sharing" target="_blank" rel="noopener">scannet_tsdf_volume.tar</a>.
 
-You also can generate the TSDF volume and corresponding bounds by using the following code:
+You can also generate the TSDF volume and corresponding bounds by using the following code:
 
 ```bash
 CUDA_VISIVLE_DEVICES=0 python get_tsdf.py configs/Replica/room0.yaml --space 1 # For Replica
@@ -136,18 +136,18 @@ bash scripts/download_cull_replica_mesh.sh # Released by authors of NICE-SLAM
 ```
 Then run the command below. The 2D metric requires rendering of 1000 depth images, which will take some time (~9 minutes). Use `-2d` to enable 2D metric. Use `-3d` to enable 3D metric.
 ```bash
-# assign any output_folder and gt mesh you like, here is just an example
+# Assign any output_folder and gt mesh you like, here is just an example
 OUTPUT_FOLDER=output/Replica/room0
 GT_MESH=cull_replica_mesh/room0.ply
 python src/tools/eval_recon.py --rec_mesh $OUTPUT_FOLDER/mesh/final_mesh_eval_rec.ply --gt_mesh $GT_MESH -2d -3d
 ```
 
-We also provide code to cull the mesh given camera poses. Here we take culling of ground truth mesh of Replica room0 as an example.
+We also provide code to cull the mesh given camera poses. Here, we take the culling of the ground truth mesh of Replica room0 as an example.
 ```bash
 python src/tools/cull_mesh.py --input_mesh Datasets/Replica/room0_mesh.ply --traj Datasets/Replica/room0/traj.txt --output_mesh cull_replica_mesh/room0.ply
 ```
 #### ScanNet
-To evaluate the reconstruction error in ScanNet, first download the <a href="https://drive.google.com/file/d/1_abRXNcEBGwYxvoA3MjO-RLds5672THY/view?usp=sharing" target="_blank" rel="noopener">ground truth ScanNet meshes.zip</a> into `./Datasets/scannet` folder. Then run the command below.
+To evaluate the reconstruction error in ScanNet, first download the <a href="https://drive.google.com/file/d/1_abRXNcEBGwYxvoA3MjO-RLds5672THY/view?usp=sharing" target="_blank" rel="noopener">ground truth ScanNet meshes.zip</a> into `./Datasets/scannet` folder. Then you can just run the command below.
 ```bash
 python src/tools/evaluate_scannet.py configs/ScanNet/scene0050.yaml 
 ```
